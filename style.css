@@ -1,0 +1,248 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  background-color: hsl(266, 77%, 71%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+}
+
+/* Navegação */
+nav ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Produtos */
+#produtos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.produto {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Página de Login */
+#login {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#login form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+#login input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#login button {
+  width: 100%;
+  padding: 12px;
+  background-color: hsl(266, 77%, 71%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login button:hover {
+  background-color: hsl(266, 77%, 60%);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  background-color: hsl(266, 77%, 71%);
+  color: white;
+  padding: 10px;
+}
+
+/* Comportamento de rolagem */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Contato */
+#contato {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contato h2 {
+  color: hsl(266, 77%, 40%);
+  margin-bottom: 10px;
+}
+
+#contato a {
+  color: hsl(266, 77%, 50%);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contato a:hover {
+  text-decoration: underline;
+}
+
+/* Contêiner de Produtos */
+.produtos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start; /* Garante que os itens fiquem alinhados no topo */
+}
+
+.produto {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 220px; /* Ajuste o tamanho para melhor alinhamento */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para a página de entrada */
+.entrada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f4f4f4, #ffffff);
+}
+
+#login-options {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+#login-options h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#login-options p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: hsl(266, 77%, 71%);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: hsl(266, 77%, 60%);
+  transform: translateY(-5px);
+}
+
+.skip {
+  background-color: #4CAF50;
+}
+
+.skip:hover {
+  background-color: #45a049;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
