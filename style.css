@@ -122,27 +122,29 @@ html {
 }
 
 /* Contato */
-#contato {
+.contato {
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
-  margin-top: 30px;
+  margin: 50px auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
 }
 
-#contato h2 {
-  color: hsl(266, 77%, 40%);
-  margin-bottom: 10px;
+/* Espaçamento entre os itens de contato */
+.contato p {
+  font-size: 18px;
+  margin-bottom: 20px; /* Aumenta o espaço entre os itens */
 }
 
-#contato a {
+.contato a {
   color: hsl(266, 77%, 50%);
   text-decoration: none;
   font-weight: bold;
 }
 
-#contato a:hover {
+.contato a:hover {
   text-decoration: underline;
 }
 
